@@ -18,5 +18,7 @@
 | 編號 | 標題 | 狀態 |
 | --- | --- | --- |
 | [0007](0007-structured-output-search-step.md) | 辨識與估算用 JSON Schema 結構化輸出，搜尋步驟維持自由文字 JSON | 已採用 |
+| [0008](0008-meal-time-context.md) | 辨識提示詞加入用餐時段 | 已採用 |
+| [0009](0009-chatgpt-first-for-recognition.md) | 辨識預設由 ChatGPT 優先，Claude 為可選備援 | 已採用 |
 
 所有決定都依同一個判斷原則：**準確優先，其次省 token；兩者衝突時，選準確。**
