@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+*.log
+# 登入憑證與日誌資料（預設在 %USERPROFILE%\.my-chatgpt-local，若資料夾被指到專案內也不收錄）
+.my-chatgpt-local/
+credentials.json
+credentials.json.*.tmp
+*.sqlite
+*.sqlite-*
+start.local.bat
+master.key
+*.tmp
+.env.*
+*.pem
+.claude/
+.vscode/
+.DS_Store
+coverage/
+meal-journal-backup*.json

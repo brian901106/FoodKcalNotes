@@ -1,0 +1,450 @@
+<title>飲食日誌架構</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* 版面：單欄技術文件，每段一張圖＋圖下說明；圖在窄螢幕內部橫向捲動 */
+:root {
+  --bg: #f4f6f3; --surface: #ffffff; --ink: #1c2420; --muted: #5a6660; --line: #c4ccc6;
+  --accent: #2c7a57; --accent-soft: #e0efe6;
+  --warm: #a75a17; --warm-soft: #f6e8d8;
+  --ext: #3a58a6; --ext-soft: #e3e8f6;
+  --font-display: "Noto Serif TC", "Songti TC", serif;
+  --font-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121614; --surface: #1a201d; --ink: #e3eae5; --muted: #9ba7a0; --line: #3a443f;
+  --accent: #6cc39a; --accent-soft: #1d3328; --warm: #e2a265; --warm-soft: #3a2a1a;
+  --ext: #91a9ee; --ext-soft: #1f2841; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #121614; --surface: #1a201d; --ink: #e3eae5; --muted: #9ba7a0; --line: #3a443f;
+  --accent: #6cc39a; --accent-soft: #1d3328; --warm: #e2a265; --warm-soft: #3a2a1a;
+  --ext: #91a9ee; --ext-soft: #1f2841; color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.75; padding-inline: 16px; padding-block: 32px 64px; }
+main { max-width: 980px; margin: 0 auto; display: grid; gap: 56px; }
+header { display: grid; gap: 8px; max-width: 68ch; }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; line-height: 1.3; margin: 0; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1rem; margin: 0; font-weight: 700; }
+p { margin: 0; }
+.eyebrow { font-size: .78rem; letter-spacing: .12em; color: var(--accent); font-weight: 700; }
+.lede { color: var(--muted); }
+code { font-family: var(--font-mono); font-size: .86em; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+section { display: grid; gap: 20px; }
+main, section { grid-template-columns: minmax(0, 1fr); }
+figure { min-width: 0; margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.scroll { overflow-x: auto; padding: 16px; }
+figcaption { border-top: 1px solid var(--line); padding: 10px 16px; font-size: .86rem; color: var(--muted); }
+svg.d { display: block; width: 100%; min-width: 760px; height: auto; color: var(--muted); font-family: var(--font-body); }
+.d text { fill: var(--ink); font-size: 13px; }
+.d .t { font-weight: 700; }
+.d .s { fill: var(--muted); font-size: 11.5px; }
+.d .m { font-family: var(--font-mono); font-size: 11.5px; }
+.d .lbl { fill: var(--muted); font-size: 11px; }
+.d .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.2; }
+.d .acc { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.4; }
+.d .ext { fill: var(--ext-soft); stroke: var(--ext); stroke-width: 1.2; }
+.d .warm { fill: var(--warm-soft); stroke: var(--warm); stroke-width: 1.2; }
+.d .frame { fill: none; stroke: var(--line); stroke-width: 1.2; stroke-dasharray: 5 4; }
+.d .ln { stroke: currentColor; stroke-width: 1.4; fill: none; }
+.d .dash { stroke-dasharray: 4 3; }
+.d .hot { stroke: var(--accent); }
+.d .faded { opacity: .55; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px 28px; }
+.notes > div { min-width: 0; display: grid; gap: 6px; align-content: start; }
+.notes ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
+.notes li::marker { color: var(--accent); }
+.formula { font-family: var(--font-mono); font-size: .84rem; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; overflow-x: auto; white-space: pre; line-height: 1.6; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: .9rem; }
+.tablewrap { overflow-x: auto; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 500; font-size: .8rem; letter-spacing: .06em; }
+td.n { text-align: right; }
+footer { color: var(--muted); font-size: .82rem; }
+</style>
+
+<main>
+<header>
+  <div class="eyebrow">FOODKCALNOTES · 架構文件</div>
+  <h1>飲食日誌架構</h1>
+  <p class="lede">在自己電腦上執行的繁體中文飲食熱量日誌：手機拍照或打字，AI（ChatGPT 或 Claude）辨識食物與份量，熱量優先取自本機食物庫與可核對的來源，由程式計算。設計原則是<b>準確優先，其次才是少呼叫模型</b>。服務跑在你的電腦上，可選擇經 Tailscale serve 從自己的手機開啟。本文依目前程式碼（server/、client/、start.bat、data/）整理。</p>
+</header>
+
+<!-- ============ 1 系統總覽 ============ -->
+<section id="overview">
+  <h2>1. 系統總覽</h2>
+  <figure>
+    <div class="scroll">
+    <svg class="d" viewBox="0 0 960 520" role="img" aria-label="手機經 Tailscale serve 的 HTTPS 8443 連到只監聽 127.0.0.1:3000 的 Express，電腦本機直接連線；Express 讀寫 SQLite 日誌，並依 AI 服務順序呼叫 OpenAI（ChatGPT 登入）或 Anthropic（Claude API key）。">
+      <defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <!-- clients -->
+      <rect class="box" x="20" y="40" width="180" height="58" rx="8"/>
+      <text class="t" x="34" y="64">你的手機</text><text class="s" x="34" y="84">PWA・ts.net:8443</text>
+      <rect class="box" x="20" y="330" width="180" height="58" rx="8"/>
+      <text class="t" x="34" y="354">執行服務的電腦</text><text class="s" x="34" y="374">127.0.0.1:3000</text>
+      <!-- tailscale -->
+      <rect class="box" x="245" y="60" width="175" height="96" rx="8"/>
+      <text class="t" x="259" y="85">Tailscale serve</text>
+      <text class="s" x="259" y="106">HTTPS :8443 → :3000</text>
+      <text class="s" x="259" y="126">附加身分標頭</text>
+      <text class="m" x="259" y="144" style="fill:var(--accent)">Tailscale-User-Login</text>
+      <path class="ln" d="M200,69 L245,92" marker-end="url(#a1)"/>
+      <!-- express -->
+      <rect class="acc" x="470" y="40" width="200" height="340" rx="10"/>
+      <text class="t" x="484" y="66">Express 伺服器</text>
+      <text class="m" x="484" y="86">127.0.0.1:3000（只聽本機）</text>
+      <text x="484" y="122">Host 白名單＋Origin／CSRF</text>
+      <text x="484" y="150">遠端須帶 Tailscale-User-Login</text>
+      <text x="484" y="178">/auth、AI 服務設定：僅本機</text>
+      <text x="484" y="206">開發模式：拒絕遠端</text>
+      <text x="484" y="234">背景工作 jobs</text>
+      <text x="484" y="262">AI 服務鏈：依序＋備援</text>
+      <text x="484" y="290">每次呼叫 150 s 逾時＋重試 1 次</text>
+      <text x="484" y="318">React 畫面（vite build → dist）</text>
+      <path class="ln" d="M420,108 L470,108" marker-end="url(#a1)"/>
+      <path class="ln" d="M200,359 L470,359" marker-end="url(#a1)"/>
+      <text class="lbl" x="335" y="351" text-anchor="middle">本機直連（無 Tailscale 標頭）</text>
+      <!-- storage -->
+      <rect class="box" x="740" y="40" width="200" height="130" rx="8"/>
+      <text class="t" x="754" y="64">meals.sqlite（日誌）</text>
+      <text class="s" x="754" y="84">meals・settings・meta・jobs</text>
+      <rect class="warm" x="752" y="104" width="176" height="52" rx="6"/>
+      <text class="t" x="764" y="126">foods 本機食物庫</text>
+      <text class="s" x="764" y="145">app 內唯讀，只能自動快取</text>
+      <rect class="box" x="740" y="310" width="200" height="70" rx="8"/>
+      <text class="m" x="754" y="335">credentials.json</text>
+      <text class="s" x="754" y="355">ChatGPT token・Claude key</text>
+      <text class="s" x="754" y="371">AES-256-GCM（Windows）</text>
+      <path class="ln" d="M670,100 L740,100" marker-end="url(#a1)"/><text class="lbl" x="705" y="92" text-anchor="middle">日誌</text>
+      <path class="ln" d="M670,345 L740,345" marker-end="url(#a1)"/><text class="lbl" x="705" y="337" text-anchor="middle">憑證</text>
+      <!-- providers -->
+      <rect class="ext" x="230" y="430" width="200" height="64" rx="8"/>
+      <text class="m" x="244" y="455">api.anthropic.com</text>
+      <text class="s" x="244" y="476">Messages API＋web_search</text>
+      <rect class="ext" x="470" y="430" width="200" height="64" rx="8"/>
+      <text class="m" x="484" y="455">api.openai.com/v1</text>
+      <text class="s" x="484" y="476">Responses API＋web_search</text>
+      <rect class="ext" x="740" y="430" width="200" height="64" rx="8"/>
+      <text class="m" x="754" y="455">auth.openai.com</text>
+      <text class="s" x="754" y="476">OAuth PKCE・refresh</text>
+      <path class="ln" d="M500,380 L500,404 L330,404 L330,430" marker-end="url(#a1)"/><text class="lbl" x="340" y="420">Claude API key</text>
+      <path class="ln" d="M600,380 L600,430" marker-end="url(#a1)"/><text class="lbl" x="610" y="410">ChatGPT 登入</text>
+      <path class="ln" d="M840,380 L840,430" marker-end="url(#a1)"/><text class="lbl" x="850" y="410">換發 token</text>
+    </svg>
+    </div>
+    <figcaption>手機與電腦的請求都進同一個只監聽 127.0.0.1 的 Express，使用同一本日誌。模型呼叫依設定的 AI 服務順序送到 OpenAI 或 Anthropic，失敗時換下一個（見第 4 節）。</figcaption>
+  </figure>
+  <div class="notes">
+    <div>
+      <h3>連線與身分</h3>
+      <ul>
+        <li><code>start.bat</code> 安裝套件、<code>vite build</code>、執行 <code>tailscale serve --https=8443 --bg 3000</code>，再 <code>npm start</code>。網址與帳號放在不進 git 的 <code>start.local.bat</code>（<code>REMOTE_ORIGINS</code>、<code>OWNER_LOGIN</code>）。</li>
+        <li>伺服器只接受 Host 為 <code>127.0.0.1:3000</code> 或 <code>REMOTE_ORIGINS</code> 的請求。遠端請求沒有 <code>Tailscale-User-Login</code> 就拒絕。</li>
+        <li>每個瀏覽器拿到 24 小時的 HttpOnly session 與 CSRF token；所有 <code>/api</code> 寫入都要帶 CSRF。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>手機與本機限定操作</h3>
+      <ul>
+        <li><code>OWNER_LOGIN</code> 是你的 Tailscale 登入帳號，讓手機與電腦本機使用同一本日誌 <code>meals.sqlite</code>。</li>
+        <li>經 Tailscale 轉送的要求（帶 <code>Tailscale-User-Login</code> 或 <code>X-Forwarded-*</code>）一律視為遠端，偽造 <code>Host: 127.0.0.1</code> 也不算本機；開發模式拒絕所有遠端要求。</li>
+        <li>ChatGPT 登入、切換、登出與 AI 服務設定（<code>/auth/*</code>、<code>/api/account</code>、<code>/api/logout</code>、<code>/api/providers</code>）只能在 127.0.0.1 操作，因為 OAuth 回程網址固定在本機。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>ChatGPT 登入（選用）</h3>
+      <ul>
+        <li>依 OpenAI「Sign in with ChatGPT」開源 app 流程：<code>client_id=dynamic_agent_client</code> 動態註冊，每台機器一個隨機 <code>ext_agent_host_id</code>；PKCE（S256）＋OIDC（issuer、audience、nonce）驗證；回程網址 <code>http://127.0.0.1:&lt;PORT&gt;/auth/callback</code>；沒有 client secret。</li>
+        <li>需要 <code>chatgpt.tokens.use.direct</code> scope；呼叫 Responses API 時一律 <code>store:false</code>、<code>stream:true</code>，以 SSE 串流組回結果。</li>
+        <li>token 到期前 30 秒自動 refresh，同一帳號同時只跑一次；<code>invalid_grant</code> 時清掉 token 要求重新授權；登出時嘗試撤銷 refresh token。</li>
+        <li>模型清單只開放 GPT 主版本小於 6 的模型，名稱以 <code>-sol</code> 結尾者排第一當預設。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 辨識流程 ============ -->
+<section id="analysis">
+  <h2>2. 食物辨識流程</h2>
+  <figure>
+    <div class="scroll">
+    <svg class="d" viewBox="0 0 960 900" role="img" aria-label="照片或文字送到 POST /api/analyze 建立背景工作；一次辨識呼叫拆出品項與份量；每個品項依序嘗試營養標示、本機食物庫完全比對、附相近候選的網路搜尋、LLM 估算；完成後自動存成餐點，並依規則寫入本機食物庫。">
+      <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <!-- row 1 -->
+      <rect class="box" x="20" y="20" width="200" height="58" rx="8"/>
+      <text class="t" x="34" y="44">照片／文字描述</text><text class="s" x="34" y="64">照片先壓到 1280px JPEG</text>
+      <rect class="acc" x="280" y="20" width="200" height="58" rx="8"/>
+      <text class="m" x="294" y="44" style="font-size:12.5px;font-weight:700">POST /api/analyze</text><text class="s" x="294" y="64">確認有可用的 AI 服務</text>
+      <rect class="box" x="540" y="20" width="200" height="58" rx="8"/>
+      <text class="t" x="554" y="44">jobs：running</text><text class="s" x="554" y="64">立即回傳 id，可關 app</text>
+      <rect class="box" x="790" y="20" width="150" height="58" rx="8"/>
+      <text class="t" x="804" y="44">首頁工作列表</text><text class="s" x="804" y="64">輪詢 /api/jobs</text>
+      <path class="ln" d="M220,49 L280,49" marker-end="url(#a2)"/>
+      <path class="ln" d="M480,49 L540,49" marker-end="url(#a2)"/>
+      <path class="ln" d="M740,49 L790,49" marker-end="url(#a2)"/>
+      <!-- row 2 recognition -->
+      <path class="ln" d="M380,78 L380,120" marker-end="url(#a2)"/>
+      <rect class="ext" x="200" y="120" width="560" height="96" rx="10"/>
+      <text class="t" x="216" y="144">模型呼叫①：辨識（每餐 1 次）</text>
+      <text x="216" y="166" style="font-size:12px">拆成 ≤15 項：名稱、同義名、grams、confidence、portionNote</text>
+      <text x="216" y="186" style="font-size:12px">portionBasis：reference（有可靠參照物）／typical（之後查一般份量）</text>
+      <text x="216" y="206" style="font-size:12px">包裝標示可讀 → labelKcalPer100g；拳頭寬依 plan 的身高與性別推算</text>
+      <path class="ln" d="M480,216 L480,240" marker-end="url(#a2)"/>
+      <!-- frame -->
+      <rect class="frame" x="20" y="240" width="920" height="390" rx="12"/>
+      <text class="lbl" x="36" y="262">每個品項（本機未命中者最多 3 項並行，結果放回原位）</text>
+      <!-- cascade -->
+      <rect class="box" x="70" y="280" width="450" height="64" rx="8"/>
+      <text class="t" x="86" y="306">營養標示有數字？</text><text class="s" x="86" y="327">直接用標示的每 100g 熱量，不呼叫模型</text>
+      <rect class="warm" x="70" y="370" width="450" height="64" rx="8"/>
+      <text class="t" x="86" y="396">本機食物庫完全比對（0 次呼叫）</text><text class="s" x="86" y="417">主名稱優先，再比同義名；互斥詞（無糖↔含糖、炸↔蒸…）排除</text>
+      <rect class="ext" x="70" y="460" width="450" height="64" rx="8"/>
+      <text class="t" x="86" y="486">模型呼叫②：web_search 查熱量</text><text class="s" x="86" y="507">附相近候選，可直接回 sameAs；網址須出現在工具引用中</text>
+      <rect class="ext" x="70" y="550" width="450" height="64" rx="8"/>
+      <text class="t" x="86" y="576">模型呼叫③：LLM 估算</text><text class="s" x="86" y="597">fallback=llm 時才在這裡附相近候選；標記為 LLM 估算</text>
+      <path class="ln" d="M295,344 L295,370" marker-end="url(#a2)"/><text class="lbl" x="305" y="361">否</text>
+      <path class="ln" d="M295,434 L295,460" marker-end="url(#a2)"/><text class="lbl" x="305" y="451">否（fallback=web）</text>
+      <path class="ln" d="M295,524 L295,550" marker-end="url(#a2)"/><text class="lbl" x="305" y="541">無可核對引用、搜尋失敗或逾時</text>
+      <path class="ln dash" d="M70,402 L46,402 L46,582 L70,582" marker-end="url(#a2)"/>
+      <text class="lbl" x="40" y="492" text-anchor="middle" transform="rotate(-90 40 492)">fallback=llm</text>
+      <!-- exits -->
+      <path class="ln hot" d="M520,312 L620,312" marker-end="url(#a2)"/><text class="lbl" x="570" y="304" text-anchor="middle">是</text>
+      <path class="ln hot" d="M520,402 L620,402" marker-end="url(#a2)"/><text class="lbl" x="570" y="394" text-anchor="middle">命中</text>
+      <path class="ln hot" d="M520,492 L620,492" marker-end="url(#a2)"/><text class="lbl" x="570" y="484" text-anchor="middle">sameAs／有引用</text>
+      <path class="ln hot" d="M520,582 L620,582" marker-end="url(#a2)"/><text class="lbl" x="570" y="574" text-anchor="middle">估算值</text>
+      <rect class="box" x="620" y="280" width="300" height="334" rx="10"/>
+      <text class="t" x="636" y="306">品項結果（來源標記）</text>
+      <text x="636" y="336">label　包裝營養標示</text>
+      <text x="636" y="362">本機　matched，食物庫數值</text>
+      <text x="636" y="388">sameAs　視同本機命中</text>
+      <text x="636" y="414">web　網路資料＋可點連結</text>
+      <text x="636" y="440">llm　LLM 估算，請確認</text>
+      <text class="s" x="636" y="476">portionBasis=typical 且來源有</text>
+      <text class="s" x="636" y="494">servingGrams → 改用一般份量</text>
+      <text class="s" x="636" y="530">判斷為不同的相近項目留在結果頁，</text>
+      <text class="s" x="636" y="548">使用者可按「其實是同一種」</text>
+      <!-- save -->
+      <path class="ln" d="M210,630 L210,660" marker-end="url(#a2)"/>
+      <rect class="acc" x="60" y="660" width="300" height="72" rx="8"/>
+      <text class="t" x="76" y="688">自動存成餐點</text><text class="s" x="76" y="710">日期與時間＝工作建立時的本機時間</text>
+      <path class="ln" d="M360,696 L420,696" marker-end="url(#a2)"/>
+      <rect class="warm" x="420" y="650" width="500" height="122" rx="8"/>
+      <text class="t" x="436" y="676">寫入 foods 的規則（saveMeal）</text>
+      <text x="436" y="700" style="font-size:12px">web／label：cache=true → 新增（同名不覆蓋既有資料）</text>
+      <text x="436" y="722" style="font-size:12px">llm：自動存檔時一律 cache=false，不寫入</text>
+      <text x="436" y="744" style="font-size:12px">使用者改過名稱或熱量：改為 manual、cache=false，不寫入</text>
+      <text x="436" y="766" style="font-size:12px">sameAs／「其實是同一種」：把辨識名記為該食物的同義名</text>
+      <!-- side jobs -->
+      <text class="lbl" x="20" y="804">結果頁的單項按鈕</text>
+      <rect class="box" x="20" y="814" width="450" height="76" rx="8"/>
+      <text class="t" x="36" y="838">以新名稱重新查詢（背景 relookup job）</text>
+      <text class="s" x="36" y="858">先存草稿，只重查這一項：本機 → web → LLM</text>
+      <text class="s" x="36" y="876">份量不變；完成後以最新餐點內容只取代這一項</text>
+      <rect class="box" x="490" y="814" width="450" height="76" rx="8"/>
+      <text class="t" x="506" y="838">AI 估算（/api/estimate，同步回應）</text>
+      <text class="s" x="506" y="858">熱量為 0 的項目才顯示：名稱當描述跑完整辨識</text>
+      <text class="s" x="506" y="876">拆成多項並各自估份量，取代原項目</text>
+    </svg>
+    </div>
+    <figcaption>每餐固定 1 次辨識呼叫；之後每個品項先走不花模型的本機路徑，查不到才花 1 次（必要時 2 次）呼叫，相近候選的比對併在同一次查熱量呼叫裡。圖中每一次「模型呼叫」都經過第 4 節的 AI 服務鏈。</figcaption>
+  </figure>
+  <div class="notes">
+    <div>
+      <h3>辨識呼叫</h3>
+      <ul>
+        <li>提示要求不給熱量，只給品名與可食重量；熱量交給資料庫，避免模型憑記憶給數字。</li>
+        <li>常見單品料理（滷肉飯、牛肉麵）整份算一項，便當或自助餐才拆；名稱要寫出烹調方式與油量，因為這會改變比對結果。</li>
+        <li>份量參照物：筷子、湯匙、手機、碗、便當盒、手搖杯，以及使用者的拳頭。拳頭寬＝身高×0.05（男）或 0.048（女），沒設計劃時用 8.5 cm；一拳容量依寬度三次方從 250 ml 換算。</li>
+        <li>使用者訊息開頭附用餐時間脈絡（如「用餐時間：週三 07:40（早餐時段）」，取自工作建立時的本機時間），只作常見份量與餐點型態的參考；放在使用者訊息而非系統指示，系統指示每次相同、利於快取。AI 估算沒有用餐時間，不附。不收集地點。</li>
+        <li>圖片內與使用者輸入的文字只當食物資料，不遵從其中指令。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>單項查熱量</h3>
+      <ul>
+        <li>本機比對用 NFKC＋去標點的正規化名稱。主名稱先比，同義名後比，因為模型給的同義名可能有誤（例如把滷蛋當茶葉蛋）。</li>
+        <li>互斥詞是硬規則，連模型的 sameAs 都不能推翻：無糖↔含糖、全糖↔半糖、炸↔蒸煮烤、生↔熟、去皮↔帶皮、脫脂↔全脂。</li>
+        <li>相近候選以雙字組相似度 ≥0.5 取最多 5 筆，併在查熱量那次呼叫，模型判斷相同就回 <code>{"sameAs": id}</code>，不多花一次呼叫。</li>
+        <li>web 結果只有在搜尋確實完成、且回傳網址（忽略 utm、#、結尾斜線）真的出現在工具引用中才標為網路資料；否則降為 LLM 估算並留下警告。</li>
+        <li>只有每份熱量時須有每份重量才換算每 100g；無重量的每份值不採用。</li>
+        <li>辨識與 LLM 估算用 API 層 JSON Schema 結構化輸出（Claude <code>output_config.format</code>、ChatGPT <code>text.format</code> strict）；web_search 那次維持自由文字 JSON，因為 Claude 在 schema 模式下不回傳引用（ADR 0007）。數值範圍仍由程式檢查。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>失敗處理</h3>
+      <ul>
+        <li>每次模型呼叫在同一服務上 150 秒逾時、重試 1 次；仍逾時、或遇到 400／401／403／429／5xx／網路錯誤時改用下一個 AI 服務。所有服務都失敗才中止整個工作（逾時顯示「分析逾時，請重試」）。</li>
+        <li>模型回傳格式錯誤、Claude 拒絕、使用者停止都不換服務。只有搜尋本身失敗或不支援時才在同一服務改用 LLM 估算。</li>
+        <li>LLM 也給不出數字時中止並請使用者提供營養標示或手動填寫；不會假裝成功。</li>
+        <li>伺服器重啟時 running 的工作標成錯誤；工作只留最新 20 筆。刪除執行中的工作會中止它，也不會存餐點；刪除餐點時一併刪除它已完成的工作，列出工作時也清掉對應餐點已不存在的已完成工作。</li>
+        <li>自動存檔失敗時，辨識結果仍留在工作裡供重試。非中文的上游錯誤訊息一律換成通用提示，不外洩原始回應。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 資料庫 ============ -->
+<section id="data">
+  <h2>3. 資料庫結構</h2>
+  <figure>
+    <div class="scroll">
+    <svg class="d" viewBox="0 0 700 500" role="img" aria-label="維護者把 data 資料夾中兩個政府來源共 159 筆（以及自行整理的選用資料）匯入日誌的 foods 表；日誌另有 meals、settings、meta、jobs。">
+      <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <!-- sources -->
+      <text class="lbl" x="20" y="34">data/*.json（維護者以腳本匯入）</text>
+      <rect class="box" x="20" y="48" width="230" height="40" rx="6"/><text x="32" y="73">食藥署 營養成分資料集</text><text class="m" x="238" y="73" text-anchor="end">137</text>
+      <rect class="box" x="20" y="98" width="230" height="40" rx="6"/><text x="32" y="123">國健署 熱量知多少 2018</text><text class="m" x="238" y="123" text-anchor="end">22</text>
+      <g class="faded"><rect class="box dash" x="20" y="148" width="230" height="56" rx="6"/><text x="32" y="172">自行整理的資料（選用）</text><text class="s" x="32" y="192">例如品牌營養標示，不隨專案發佈</text></g>
+      <text class="t" x="20" y="236">內附 159 筆</text><text class="s" x="20" y="256">source=web，附來源網址與標題</text>
+      <text class="s" x="20" y="274">授權見 data/ATTRIBUTION.md</text>
+      <path class="ln" d="M250,110 L320,110" marker-end="url(#a3)"/><text class="lbl" x="285" y="102" text-anchor="middle">匯入</text>
+      <!-- journal frame -->
+      <rect class="frame" x="300" y="16" width="380" height="470" rx="12"/>
+      <text class="m" x="316" y="38" style="fill:var(--muted)">meals.sqlite（日誌）</text>
+      <rect class="warm" x="320" y="52" width="340" height="112" rx="8"/>
+      <text class="t" x="334" y="76">foods　本機食物庫</text>
+      <text class="m" x="334" y="98">id・name・normalized UNIQUE</text>
+      <text class="s" x="334" y="120">data：aliases（≤20）、kcalPer100g、</text>
+      <text class="s" x="334" y="138">source（web/label/llm/manual）、sourceUrl、</text>
+      <text class="s" x="334" y="156">sourceTitle、notes</text>
+      <rect class="box" x="320" y="180" width="165" height="146" rx="8"/>
+      <text class="t" x="334" y="204">meals</text>
+      <text class="m" x="334" y="228">id・day・time</text>
+      <text class="m" x="334" y="250">name・photo</text>
+      <text class="m" x="334" y="272">items（JSON）</text>
+      <text class="m" x="334" y="294">created_at</text>
+      <text class="s" x="334" y="316">索引：day</text>
+      <rect class="box" x="495" y="180" width="165" height="146" rx="8"/>
+      <text class="t" x="509" y="204">jobs</text>
+      <text class="m" x="509" y="228">id・kind・status</text>
+      <text class="m" x="509" y="250">text・photo・steps</text>
+      <text class="m" x="509" y="272">result・error</text>
+      <text class="m" x="509" y="294">meal_id・created_at</text>
+      <text class="s" x="509" y="316">只留最新 20 筆</text>
+      <rect class="box" x="320" y="342" width="165" height="128" rx="8"/>
+      <text class="t" x="334" y="366">settings</text>
+      <text class="m" x="334" y="390">goal（預設 1800）</text>
+      <text class="m" x="334" y="412">fallback web/llm</text>
+      <text class="m" x="334" y="434">model・name</text>
+      <text class="m" x="334" y="456">plan（減重計劃）</text>
+      <rect class="box" x="495" y="342" width="165" height="128" rx="8"/>
+      <text class="t" x="509" y="366">meta</text>
+      <text class="s" x="509" y="390">鍵值形式的</text>
+      <text class="s" x="509" y="408">內部紀錄</text>
+    </svg>
+    </div>
+    <figcaption>日誌是一個 SQLite 檔（WAL 模式），包含餐點、設定、背景工作與本機食物庫。</figcaption>
+  </figure>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>檔案</th><th>來源</th><th style="text-align:right">筆數</th></tr></thead>
+      <tbody>
+        <tr><td><code>tfda-common.json</code></td><td>衛福部食藥署 食品營養成分資料集（2025 版 UPDATE1）</td><td class="n">137</td></tr>
+        <tr><td><code>hpa-2018-dishes.json</code></td><td>國健署 熱量知多少（2018，中式菜餚，原頁已下架，引用封存頁；每份換算為每 100g）</td><td class="n">22</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="notes">
+    <div>
+      <h3>食物庫規則</h3>
+      <ul>
+        <li>app 內唯讀：沒有新增、修改、刪除介面。內容只來自兩條路：維護者用腳本匯入 data/*.json，以及保存餐點時自動快取未修改的 web／label 結果，和使用者在結果頁按「AI 估算」並確認保存的 LLM 結果；背景自動存檔的 LLM 估算一律不快取。</li>
+        <li><code>normalized</code> 唯一，自動快取不覆蓋同名資料；同義名最多 20 個，靠 sameAs 與「其實是同一種」逐步學習。</li>
+        <li>資料庫之後更新不會倒改既有餐點：每餐的 items 存當時的 grams 與每 100g 熱量快照。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>熱量、連勝與目標</h3>
+      <ul>
+        <li>每項熱量＝grams × kcalPer100g ÷ 100，四捨五入後加總，由程式計算，不由模型給。</li>
+        <li>連勝 🔥：從今天往回數（今天還沒記錄就從昨天起），連續「有記錄且當日總熱量不超過目前目標」的天數。</li>
+        <li>settings 的 goal 介於 500～10000 kcal；fallback 決定本機查不到時先搜網路或直接估算。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>減重計劃換算</h3>
+      <div class="formula">BMR  = 10×體重 + 6.25×身高 − 5×年齡 + (男 5 / 女 −161)
+TDEE = BMR × 活動係數（1.2／1.375／1.55／1.725）
+下限 = max(BMR, 男 1500 / 女 1200)
+每週 = (TDEE − goal) × 7 ÷ 7700 kg
+天數 = ⌈(體重 − 目標) ÷ 每週 × 7⌉，從 startDate 起算</div>
+      <p style="font-size:.88rem;color:var(--muted)">Mifflin-St Jeor 公式，前端 <code>client/plan.js</code> 計算；plan 也提供辨識時的拳頭大小。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 AI 服務與憑證 ============ -->
+<section id="providers">
+  <h2>4. AI 服務鏈與憑證保存</h2>
+  <figure>
+    <div class="scroll">
+    <svg class="d" viewBox="0 0 960 400" role="img" aria-label="每次模型呼叫依設定順序嘗試已啟用且可用的服務（ChatGPT 登入、Claude API key），可換服務的錯誤時改用下一個；憑證檔以 AES-256-GCM 加密，主金鑰由 Windows DPAPI 保護。">
+      <defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <!-- chain -->
+      <text class="lbl" x="20" y="24">每一次模型呼叫（辨識、查熱量、估算）</text>
+      <rect class="box" x="20" y="40" width="170" height="70" rx="8"/>
+      <text class="t" x="34" y="66">infer(body)</text><text class="s" x="34" y="88">settings 的順序，</text><text class="s" x="34" y="104">只取啟用且可用者</text>
+      <rect class="ext" x="250" y="40" width="230" height="70" rx="8"/>
+      <text class="t" x="264" y="64">① ChatGPT（若排第一）</text>
+      <text class="s" x="264" y="84">已登入＋plan scope＋模型在清單中</text>
+      <text class="s" x="264" y="102">Responses API＋web_search</text>
+      <rect class="ext" x="540" y="40" width="230" height="70" rx="8"/>
+      <text class="t" x="554" y="64">② Claude API</text>
+      <text class="s" x="554" y="84">已存 key；Haiku／Sonnet／Opus 5.5</text>
+      <text class="s" x="554" y="102">Messages API＋web_search</text>
+      <rect class="acc" x="820" y="40" width="120" height="70" rx="8"/>
+      <text class="t" x="834" y="66">結果</text><text class="s" x="834" y="88">備註加註實際</text><text class="s" x="834" y="104">處理的服務與模型</text>
+      <path class="ln" d="M190,75 L250,75" marker-end="url(#a4)"/>
+      <path class="ln" d="M480,75 L540,75" marker-end="url(#a4)"/><text class="lbl" x="510" y="67" text-anchor="middle">換下一個</text>
+      <path class="ln hot" d="M770,75 L820,75" marker-end="url(#a4)"/>
+      <path class="ln hot" d="M365,110 L365,134 L880,134 L880,110" marker-end="url(#a4)"/><text class="lbl" x="620" y="150" text-anchor="middle">成功</text>
+      <text class="s" x="250" y="178">換服務：400／401／403／429／5xx、逾時（已重試 1 次）、網路錯誤、額度或限流訊息</text>
+      <text class="s" x="250" y="196">不換：回傳格式錯誤、Claude 拒絕、使用者停止；全部失敗才拋出最後一個錯誤</text>
+      <!-- credentials -->
+      <text class="lbl" x="20" y="244">憑證保存（storage.js）</text>
+      <rect class="warm" x="20" y="260" width="250" height="110" rx="8"/>
+      <text class="m" x="34" y="284">credentials.json</text>
+      <text class="s" x="34" y="306">hostId・ChatGPT 帳號與 token</text>
+      <text class="s" x="34" y="324">providers（順序、啟用、Claude key）</text>
+      <text class="m" x="34" y="350">{ v, enc, iv, tag, data }</text>
+      <rect class="box" x="340" y="260" width="250" height="110" rx="8"/>
+      <text class="t" x="354" y="284">AES-256-GCM</text>
+      <text class="s" x="354" y="306">32-byte 主金鑰，啟動時解開一次</text>
+      <text class="s" x="354" y="324">每次保存新的 12-byte IV</text>
+      <text class="s" x="354" y="342">暫存檔＋原子替換</text>
+      <rect class="box" x="660" y="260" width="280" height="110" rx="8"/>
+      <text class="m" x="674" y="284">master.key</text>
+      <text class="s" x="674" y="306">Windows DPAPI（CurrentUser）保護</text>
+      <text class="s" x="674" y="324">資料夾以 icacls 限定目前使用者</text>
+      <text class="s" x="674" y="342">非 Windows：無主金鑰，明文 0600</text>
+      <path class="ln" d="M340,315 L270,315" marker-end="url(#a4)"/><text class="lbl" x="305" y="307" text-anchor="middle">加密</text>
+      <path class="ln" d="M660,315 L590,315" marker-end="url(#a4)"/><text class="lbl" x="625" y="307" text-anchor="middle">金鑰</text>
+    </svg>
+    </div>
+    <figcaption>服務順序與憑證只存在後端；瀏覽器只看到服務名稱、是否可用與 Claude key 末四碼。</figcaption>
+  </figure>
+  <div class="notes">
+    <div>
+      <h3>服務順序與備援</h3>
+      <ul>
+        <li>設定存在 <code>credentials.json</code> 的 <code>providers</code>：預設 ChatGPT 啟用、Claude 停用；可上移／下移與個別啟用。每次呼叫只用「啟用且可用」的服務，排第一的是主要服務。</li>
+        <li>ChatGPT 的模型來自日誌的 <code>settings.model</code>；模型不在清單或取得清單失敗時略過 ChatGPT。Claude 的模型存在 provider 設定，預設 Haiku 5.5；Opus／Sonnet 啟用伺服器端拒絕備援，Haiku 用基本版 web_search。</li>
+        <li>400 也會換服務，因為各家接受的要求格式不同；錯誤訊息只保留中文提示，Claude 的錯誤原文最多 200 字且遮蔽像金鑰的字串。</li>
+        <li>每個品項的備註都加上實際處理的服務與模型「（由 ○○ 處理）」，不論主要或備援；已有舊標註時先移除再加，不重複。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Claude API key</h3>
+      <ul>
+        <li>只能在本機設定；保存前以免費的 Token Counting API（<code>messages.countTokens</code>，所選模型，15 秒逾時）驗證：401／403 判為無效，未綁定工作區的金鑰回 400 並提示在工作區內建立，其他錯誤判為無法驗證，皆不保存。</li>
+        <li>空字串刪除金鑰；畫面只顯示 <code>••••</code>＋末四碼與加入時間。</li>
+        <li>Windows 換電腦或換帳號後 <code>master.key</code> 無法解開：服務拒絕啟動並提示刪除 <code>credentials.json</code> 與 <code>master.key</code> 後重新設定，絕不覆寫已加密的檔案。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>依 2026-10-23 的程式碼整理：server/server.js、app.js、claude.js、food-routes.js、food-analysis.js、journal.js、oauth.js、storage.js，client/App.jsx、plan.js，start.bat，data/*.json。</footer>
+</main>

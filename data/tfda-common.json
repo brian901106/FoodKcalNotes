@@ -1,0 +1,1406 @@
+[
+  {
+    "name": "白飯（熟）",
+    "aliases": [
+      "白米飯（熟）"
+    ],
+    "kcalPer100g": 182,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：白飯（A0550601）；熟,白米加1.1倍的去離子水,用電鍋烹煮；電鍋煮熟白米飯；每100g 修正熱量 182 kcal"
+  },
+  {
+    "name": "廣東粥",
+    "aliases": [],
+    "kcalPer100g": 81,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：廣東粥（R0100101）；處理:(花枝,豬肝,油條,蛋等)；每100g 修正熱量 81 kcal"
+  },
+  {
+    "name": "燕麥片（乾）",
+    "aliases": [
+      "快煮燕麥片（乾）"
+    ],
+    "kcalPer100g": 383,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：燕麥片（A0810101）；快煮即食；乾燕麥片重量，非煮好的燕麥粥；每100g 修正熱量 383 kcal"
+  },
+  {
+    "name": "黃肉地瓜（生）",
+    "aliases": [
+      "黃地瓜（生）"
+    ],
+    "kcalPer100g": 115,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：黃肉甘藷（B0400601）；生,黃皮黃肉；處理:去皮；生重；烤地瓜失水後每100g熱量較高；每100g 修正熱量 115 kcal"
+  },
+  {
+    "name": "紅肉地瓜（生）",
+    "aliases": [
+      "紅地瓜（生）"
+    ],
+    "kcalPer100g": 109,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：紅肉甘藷（B0400401）；生,紅皮紅肉；處理:去皮；生重；每100g 修正熱量 109 kcal"
+  },
+  {
+    "name": "甜玉米（生）",
+    "aliases": [
+      "玉米粒（生）"
+    ],
+    "kcalPer100g": 97,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：甜玉米（A0400301）；生；處理:取玉米粒；每100g 修正熱量 97 kcal"
+  },
+  {
+    "name": "馬鈴薯（生）",
+    "aliases": [
+      "洋芋（生）"
+    ],
+    "kcalPer100g": 68,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：馬鈴薯(2022年取樣)（B0700202）；生,黃皮種；處理:去皮；取2022年取樣；每100g 修正熱量 68 kcal"
+  },
+  {
+    "name": "南瓜（生）",
+    "aliases": [
+      "金瓜（生）"
+    ],
+    "kcalPer100g": 69,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：南瓜平均值（E63001）；生；處理:去皮及籽；平均值；每100g 修正熱量 69 kcal"
+  },
+  {
+    "name": "油麵",
+    "aliases": [
+      "黃油麵",
+      "衛生油麵"
+    ],
+    "kcalPer100g": 162,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：衛生油麵（R2001101）；濕麵條(麵粉,食油,鹼粉等)；市售濕麵條；每100g 修正熱量 162 kcal"
+  },
+  {
+    "name": "烏龍麵",
+    "aliases": [
+      "冷凍烏龍麵"
+    ],
+    "kcalPer100g": 126,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷凍烏龍麵（R2001301）；濕麵條(小麥粉,澱粉,鹽等),冷凍製品；冷凍熟濕麵條；每100g 修正熱量 126 kcal"
+  },
+  {
+    "name": "粿仔條",
+    "aliases": [
+      "粿條"
+    ],
+    "kcalPer100g": 193,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：粿仔條（R1100701）；每100g 修正熱量 193 kcal"
+  },
+  {
+    "name": "粄條",
+    "aliases": [
+      "米粄條",
+      "美濃粄條"
+    ],
+    "kcalPer100g": 127,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：米粄條（R1100501）；處理:(在來米,修飾澱粉,地瓜粉,鹽,沙拉油等)；每100g 修正熱量 127 kcal"
+  },
+  {
+    "name": "泡麵（乾麵體）",
+    "aliases": [
+      "速食麵（乾麵體）"
+    ],
+    "kcalPer100g": 470,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：泡麵(牛肉口味)（R2100201）；處理:(麵粉,調味料等)；牛肉口味，未沖泡的麵塊含調味料重量；每100g 修正熱量 470 kcal"
+  },
+  {
+    "name": "白吐司",
+    "aliases": [
+      "土司",
+      "吐司"
+    ],
+    "kcalPer100g": 283,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：土司（Q1000101）；處理:(麵粉,乳粉,糖,鹽,油脂,酵母,乳化劑等)；每100g 修正熱量 283 kcal"
+  },
+  {
+    "name": "全麥吐司",
+    "aliases": [
+      "含全穀粉吐司"
+    ],
+    "kcalPer100g": 283,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：土司(含全穀粉)（Q1000201）；處理:(麵粉,乳粉,糖,鹽,油脂,麩皮,酵母,小麥胚芽等)；每100g 修正熱量 283 kcal"
+  },
+  {
+    "name": "菠蘿麵包",
+    "aliases": [],
+    "kcalPer100g": 376,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：菠蘿麵包（Q1000801）；每100g 修正熱量 376 kcal"
+  },
+  {
+    "name": "肉鬆麵包",
+    "aliases": [],
+    "kcalPer100g": 423,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：肉鬆麵包（Q1000501）；每100g 修正熱量 423 kcal"
+  },
+  {
+    "name": "可頌",
+    "aliases": [
+      "牛角麵包"
+    ],
+    "kcalPer100g": 448,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：可頌（Q0700101）；每100g 修正熱量 448 kcal"
+  },
+  {
+    "name": "豬肉熟水餃（冷凍）",
+    "aliases": [
+      "冷凍熟水餃"
+    ],
+    "kcalPer100g": 231,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷凍豬肉熟水餃（R2200801）；冷凍包裝(豬肉,麵粉,蔬菜等)；冷凍預煮水餃；每100g 修正熱量 231 kcal"
+  },
+  {
+    "name": "溫州大餛飩（去湯）",
+    "aliases": [
+      "大餛飩（去湯）"
+    ],
+    "kcalPer100g": 144,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：溫州餛飩（R2201301）；去湯；不含湯；每100g 修正熱量 144 kcal"
+  },
+  {
+    "name": "肉粽",
+    "aliases": [],
+    "kcalPer100g": 234,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：肉粽（R0400101）；處理:(豬肉,香菇,鴨蛋黃,花生等)；含豬肉、香菇、鹹蛋黃、花生；每100g 修正熱量 234 kcal"
+  },
+  {
+    "name": "糯米飯糰",
+    "aliases": [
+      "傳統飯糰"
+    ],
+    "kcalPer100g": 333,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：糯米飯糰（R0300201）；處理:(油條,肉鬆,菜脯等)；含油條、肉鬆、菜脯；每100g 修正熱量 333 kcal"
+  },
+  {
+    "name": "肉鬆三角飯糰",
+    "aliases": [
+      "肉鬆御飯糰"
+    ],
+    "kcalPer100g": 215,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：三角飯糰(肉鬆)（R0300101）；處理:(米,肉鬆,海苔,美奶滋,芝麻,食品添加物等)；便利商店型；每100g 修正熱量 215 kcal"
+  },
+  {
+    "name": "筒仔米糕",
+    "aliases": [],
+    "kcalPer100g": 244,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：筒仔米糕（R0500401）；每100g 修正熱量 244 kcal"
+  },
+  {
+    "name": "油條",
+    "aliases": [],
+    "kcalPer100g": 548,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：油條（R3000101）；每100g 修正熱量 548 kcal"
+  },
+  {
+    "name": "蘿蔔糕（未煎）",
+    "aliases": [
+      "廣式蘿蔔糕（未煎）"
+    ],
+    "kcalPer100g": 109,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷藏廣式蘿蔔糕（Q0100401）；冷藏真空包裝(米,蘿蔔,豬肉,蝦米,香菇,油,蔥,火腿等)；冷藏真空包裝，未煎；每100g 修正熱量 109 kcal"
+  },
+  {
+    "name": "火腿炒飯",
+    "aliases": [
+      "冷凍火腿炒飯"
+    ],
+    "kcalPer100g": 185,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷凍火腿炒飯（R0200101）；冷凍包裝(米,火腿,蔬菜等)；冷凍調理炒飯；每100g 修正熱量 185 kcal"
+  },
+  {
+    "name": "火腿蛋三明治",
+    "aliases": [],
+    "kcalPer100g": 272,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：火腿蛋三明治（R2500101）；處理:(土司,火腿片,蛋,小黃瓜等)；含吐司、火腿片、蛋、小黃瓜；每100g 修正熱量 272 kcal"
+  },
+  {
+    "name": "豬血糕",
+    "aliases": [
+      "米血糕"
+    ],
+    "kcalPer100g": 192,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豬血糕（R0600101）；處理:(豬血,糯米,鹽等)；每100g 修正熱量 192 kcal"
+  },
+  {
+    "name": "甜不辣",
+    "aliases": [
+      "天婦羅"
+    ],
+    "kcalPer100g": 175,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：天婦羅（R6700401）；含魚漿,太白粉等(不含調味醬)；魚漿製品，不含醬；每100g 修正熱量 175 kcal"
+  },
+  {
+    "name": "貢丸",
+    "aliases": [
+      "豬肉貢丸"
+    ],
+    "kcalPer100g": 244,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷凍貢丸（R5400201）；冷凍包裝(豬後腿肉等)；每100g 修正熱量 244 kcal"
+  },
+  {
+    "name": "香腸（生）",
+    "aliases": [
+      "台式香腸（生）"
+    ],
+    "kcalPer100g": 354,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：香腸（R5300201）；生(豬肉,豬腸衣,鹽,糖,食品添加物等)；未烹調；每100g 修正熱量 354 kcal"
+  },
+  {
+    "name": "熱狗（生）",
+    "aliases": [],
+    "kcalPer100g": 257,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：熱狗（R5300501）；生(豬肉,鹽,糖,澱粉,黃豆蛋白,食品添加物等)；未烹調；每100g 修正熱量 257 kcal"
+  },
+  {
+    "name": "火腿片",
+    "aliases": [
+      "三明治火腿",
+      "切片火腿"
+    ],
+    "kcalPer100g": 147,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：切片火腿(豬肉)（R5100301）；處理:(豬肉,鹽,糖等)；豬肉切片火腿；每100g 修正熱量 147 kcal"
+  },
+  {
+    "name": "雞塊",
+    "aliases": [
+      "冷凍雞塊"
+    ],
+    "kcalPer100g": 228,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷凍雞塊（R5500201）；冷凍包裝(雞胸肉,腿肉等)；每100g 修正熱量 228 kcal"
+  },
+  {
+    "name": "烤雞",
+    "aliases": [
+      "手扒雞"
+    ],
+    "kcalPer100g": 233,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：烤雞（R7300101）；全雞肉；處理:去頭尾,去骨；全雞去骨；每100g 修正熱量 233 kcal"
+  },
+  {
+    "name": "滷豬腳",
+    "aliases": [],
+    "kcalPer100g": 237,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：滷豬腳（R5101101）；處理:去骨；每100g 修正熱量 237 kcal"
+  },
+  {
+    "name": "芝麻湯圓",
+    "aliases": [
+      "黑芝麻湯圓"
+    ],
+    "kcalPer100g": 351,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：冷凍芝麻湯圓（R0900101）；冷凍包裝(糯米,芝麻粉等)；冷凍生湯圓；每100g 修正熱量 351 kcal"
+  },
+  {
+    "name": "豆花（無糖）",
+    "aliases": [
+      "無糖豆花"
+    ],
+    "kcalPer100g": 37,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：傳統豆花(未加糖)（Q2104201）；傳統豆花未加糖；每100g 修正熱量 37 kcal"
+  },
+  {
+    "name": "仙草凍",
+    "aliases": [
+      "仙草"
+    ],
+    "kcalPer100g": 19,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：仙草凍（Q2100101）；處理:(仙草,鹼粉,澱粉,水,海藻膠,糖等)；含糖；每100g 修正熱量 19 kcal"
+  },
+  {
+    "name": "鮮奶布丁",
+    "aliases": [],
+    "kcalPer100g": 110,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鮮奶布丁（Q2102101）；處理:(生乳,鮮奶油,奶粉,糖,香料,乳化劑,植物膠等)；每100g 修正熱量 110 kcal"
+  },
+  {
+    "name": "葡式蛋塔",
+    "aliases": [],
+    "kcalPer100g": 373,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：蛋塔(葡式)（Q0700401）；每100g 修正熱量 373 kcal"
+  },
+  {
+    "name": "鳳梨酥",
+    "aliases": [],
+    "kcalPer100g": 481,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鳳梨酥（Q0500501）；每100g 修正熱量 481 kcal"
+  },
+  {
+    "name": "紅豆車輪餅",
+    "aliases": [
+      "紅豆餅"
+    ],
+    "kcalPer100g": 174,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：車輪餅(紅豆)（Q0400101）；每100g 修正熱量 174 kcal"
+  },
+  {
+    "name": "黑巧克力（85%）",
+    "aliases": [],
+    "kcalPer100g": 585,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：黑巧克力(85%)（Q6100601）；處理:(可可漿,可可脂,可可粉,糖,乳化劑,香料等)；每100g 修正熱量 585 kcal"
+  },
+  {
+    "name": "香草冰淇淋",
+    "aliases": [],
+    "kcalPer100g": 182,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：香草冰淇淋（Q2200201）；每100g 修正熱量 182 kcal"
+  },
+  {
+    "name": "洋芋片",
+    "aliases": [],
+    "kcalPer100g": 549,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：洋芋片（Q4200201）；每100g 修正熱量 549 kcal"
+  },
+  {
+    "name": "雞蛋（生）",
+    "aliases": [
+      "生雞蛋"
+    ],
+    "kcalPer100g": 135,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：雞蛋平均值（K01001）；生；處理:去殼；平均值，去殼；每100g 修正熱量 135 kcal"
+  },
+  {
+    "name": "水煮蛋",
+    "aliases": [
+      "白煮蛋",
+      "雞水煮蛋"
+    ],
+    "kcalPer100g": 144,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：雞水煮蛋（K0111101）；處理:約7L一次水以大火煮25分鐘,水滾後續煮10分鐘,撈出瀝乾均質；每100g 修正熱量 144 kcal"
+  },
+  {
+    "name": "荷包蛋（不加油）",
+    "aliases": [
+      "煎蛋（不加油）"
+    ],
+    "kcalPer100g": 162,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：荷包蛋(不加油)（K0123101）；處理:不沾鍋中不加油,待鍋熱打入蛋,約1~2分鐘後翻面,每粒約煎2~3分鐘,取出放冷均質；不沾鍋不加油煎；每100g 修正熱量 162 kcal"
+  },
+  {
+    "name": "荷包蛋（加油）",
+    "aliases": [],
+    "kcalPer100g": 192,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：荷包蛋(加油1小匙)（K0123201）；處理:不沾鍋中加入1小匙油,待油熱打入蛋,約1~2分鐘後翻面,每粒約煎2~3分鐘,取出放冷均質；不沾鍋加1小匙油煎；每100g 修正熱量 192 kcal"
+  },
+  {
+    "name": "炒蛋（多油）",
+    "aliases": [],
+    "kcalPer100g": 215,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：炒蛋(加油3大匙)（K0150201）；處理:雞蛋去殼打勻,於不沾鍋中加入3大匙油,熱鍋2分鐘,倒入蛋液以小火快炒3分鐘,取出放冷均質；加3大匙油炒；每100g 修正熱量 215 kcal"
+  },
+  {
+    "name": "茶葉蛋",
+    "aliases": [],
+    "kcalPer100g": 145,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：茶葉蛋平均值（K01121）；熟,雞蛋製品；處理:去殼；平均值；每100g 修正熱量 145 kcal"
+  },
+  {
+    "name": "滷蛋",
+    "aliases": [],
+    "kcalPer100g": 184,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：滷蛋平均值（K01201）；熟,雞蛋製品；平均值；每100g 修正熱量 184 kcal"
+  },
+  {
+    "name": "蒸蛋",
+    "aliases": [],
+    "kcalPer100g": 64,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：蒸蛋平均值（K01503）；熟,雞蛋製品；平均值（市售、電鍋、微波）；每100g 修正熱量 64 kcal"
+  },
+  {
+    "name": "鹹鴨蛋",
+    "aliases": [
+      "鹹蛋"
+    ],
+    "kcalPer100g": 185,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鴨鹹蛋平均值（K02141）；鴨蛋製品；處理:去殼；平均值，去殼；每100g 修正熱量 185 kcal"
+  },
+  {
+    "name": "皮蛋",
+    "aliases": [
+      "鴨皮蛋"
+    ],
+    "kcalPer100g": 164,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鴨皮蛋（K0213101）；鴨蛋製品(鴨蛋,鹼液,鹽,茶葉等)；處理:去殼；每100g 修正熱量 164 kcal"
+  },
+  {
+    "name": "無糖豆漿",
+    "aliases": [
+      "豆漿（無糖）"
+    ],
+    "kcalPer100g": 32,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豆漿(無糖)（H1150201）；包裝產品(黃豆,水等)；每100g 修正熱量 32 kcal"
+  },
+  {
+    "name": "有糖豆漿",
+    "aliases": [
+      "含糖豆漿",
+      "甜豆漿"
+    ],
+    "kcalPer100g": 56,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豆漿（R5000101）；包裝產品(黃豆,水,糖等)；每100g 修正熱量 56 kcal"
+  },
+  {
+    "name": "鹹豆漿",
+    "aliases": [],
+    "kcalPer100g": 37,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鹹豆漿（R5000301）；散裝(含油條,菜脯等)；散裝，含油條、菜脯；每100g 修正熱量 37 kcal"
+  },
+  {
+    "name": "板豆腐",
+    "aliases": [
+      "傳統豆腐"
+    ],
+    "kcalPer100g": 93,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：傳統豆腐(2022年取樣)（R4700902）；取2022年取樣；每100g 修正熱量 93 kcal"
+  },
+  {
+    "name": "嫩豆腐",
+    "aliases": [],
+    "kcalPer100g": 51,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：嫩豆腐（R4701201）；每100g 修正熱量 51 kcal"
+  },
+  {
+    "name": "雞蛋豆腐",
+    "aliases": [],
+    "kcalPer100g": 79,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：雞蛋豆腐（R4701301）；處理:(黃豆,雞蛋,鹽,調味料等)；每100g 修正熱量 79 kcal"
+  },
+  {
+    "name": "小方豆干",
+    "aliases": [],
+    "kcalPer100g": 155,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：小方豆干（R4700203）；處理:(黃豆,鹽,調味料等)；每100g 修正熱量 155 kcal"
+  },
+  {
+    "name": "五香豆干",
+    "aliases": [],
+    "kcalPer100g": 192,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：五香豆干（R4700202）；處理:(黃豆,鹽,調味料等)；每100g 修正熱量 192 kcal"
+  },
+  {
+    "name": "百頁豆腐",
+    "aliases": [
+      "千張豆腐"
+    ],
+    "kcalPer100g": 195,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：百頁豆腐（R4700801）；處理:(黃豆,鹽等)；每100g 修正熱量 195 kcal"
+  },
+  {
+    "name": "三角油豆腐",
+    "aliases": [
+      "小三角油豆腐"
+    ],
+    "kcalPer100g": 158,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：小三角油豆腐（R4701101）；處理:(黃豆,油脂等)；每100g 修正熱量 158 kcal"
+  },
+  {
+    "name": "豆腐皮",
+    "aliases": [],
+    "kcalPer100g": 208,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豆腐皮（R4700401）；每100g 修正熱量 208 kcal"
+  },
+  {
+    "name": "毛豆仁（生）",
+    "aliases": [
+      "生毛豆仁"
+    ],
+    "kcalPer100g": 116,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：毛豆仁（H1100101）；生；每100g 修正熱量 116 kcal"
+  },
+  {
+    "name": "全脂鮮奶",
+    "aliases": [
+      "全脂牛奶",
+      "全脂鮮乳"
+    ],
+    "kcalPer100g": 63,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：全脂鮮乳平均值（L01021）；全脂(3.0-3.8%)鮮乳；平均值；每100g 修正熱量 63 kcal"
+  },
+  {
+    "name": "低脂鮮奶",
+    "aliases": [
+      "低脂牛奶",
+      "低脂鮮乳"
+    ],
+    "kcalPer100g": 43,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：低脂鮮乳（L0106101）；低脂(0.5-1.5%)鮮乳；每100g 修正熱量 43 kcal"
+  },
+  {
+    "name": "巧克力牛奶",
+    "aliases": [
+      "巧克力調味乳"
+    ],
+    "kcalPer100g": 61,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：中脂調味乳(巧克力)（L0124101）；中脂調味乳(生乳,可可粉,水,砂糖,果糖,鹽,海藻酸鈉,鈣質等)；每100g 修正熱量 61 kcal"
+  },
+  {
+    "name": "無糖優格（全脂）",
+    "aliases": [
+      "全脂無糖優格"
+    ],
+    "kcalPer100g": 97,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：全脂凝態發酵乳（L0322101）；全脂(3.0-3.8%)凝態發酵乳(生乳,乳酸菌等)；凝態發酵乳，原料僅生乳與乳酸菌；每100g 修正熱量 97 kcal"
+  },
+  {
+    "name": "全脂優酪乳（含糖）",
+    "aliases": [],
+    "kcalPer100g": 90,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：全脂濃稠發酵乳（L0312101）；全脂(3.0-3.8%)濃稠發酵乳(生乳,特砂,乳製品,水等)；濃稠發酵乳，含砂糖；每100g 修正熱量 90 kcal"
+  },
+  {
+    "name": "起司片",
+    "aliases": [
+      "乳酪片",
+      "切片起司"
+    ],
+    "kcalPer100g": 309,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：切片乾酪（L0500101）；處理:(鮮牛奶,凝乳酶等)；每100g 修正熱量 309 kcal"
+  },
+  {
+    "name": "烏龍茶（全糖）",
+    "aliases": [],
+    "kcalPer100g": 36,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：烏龍茶(去冰,全糖)（O0701201）；現調飲料(大杯,約700 mL)；手搖現調，大杯去冰；每100g 修正熱量 36 kcal"
+  },
+  {
+    "name": "烏龍茶（半糖）",
+    "aliases": [],
+    "kcalPer100g": 21,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：烏龍茶(去冰,半糖)（O0701101）；現調飲料(大杯,約700 mL)；手搖現調，大杯去冰；每100g 修正熱量 21 kcal"
+  },
+  {
+    "name": "烏龍茶（微糖）",
+    "aliases": [],
+    "kcalPer100g": 16,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：烏龍茶(去冰,微糖)（O0701001）；現調飲料(大杯,約700 mL)；手搖現調，大杯去冰；每100g 修正熱量 16 kcal"
+  },
+  {
+    "name": "無糖烏龍茶",
+    "aliases": [
+      "烏龍茶（無糖）"
+    ],
+    "kcalPer100g": 0,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：烏龍茶茶湯（O0700801）；處理:每茶袋以約90℃自來水240mL浸泡四分鐘,取湯汁；茶湯；每100g 修正熱量 0 kcal"
+  },
+  {
+    "name": "無糖綠茶",
+    "aliases": [
+      "綠茶（無糖）"
+    ],
+    "kcalPer100g": 0,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：綠茶茶湯（O0701301）；處理:每茶袋以約90℃自來水240mL浸泡4分鐘,取湯汁；茶包沖泡茶湯；每100g 修正熱量 0 kcal"
+  },
+  {
+    "name": "無糖紅茶",
+    "aliases": [
+      "紅茶（無糖）"
+    ],
+    "kcalPer100g": 0,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：紅茶茶湯（O0700501）；處理:每茶袋以約90℃自來水240mL浸泡4分鐘,取湯汁；茶包沖泡茶湯；每100g 修正熱量 0 kcal"
+  },
+  {
+    "name": "美式咖啡（無糖）",
+    "aliases": [
+      "黑咖啡",
+      "無糖美式"
+    ],
+    "kcalPer100g": 2,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：美式咖啡(無糖)（O0700101）；現調飲料；每100g 修正熱量 2 kcal"
+  },
+  {
+    "name": "拿鐵（無糖）",
+    "aliases": [
+      "無糖拿鐵"
+    ],
+    "kcalPer100g": 43,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：拿鐵咖啡(無糖)（O0700301）；現調飲料(咖啡,牛奶等)；每100g 修正熱量 43 kcal"
+  },
+  {
+    "name": "鮮奶茶（無糖）",
+    "aliases": [
+      "無糖鮮奶茶"
+    ],
+    "kcalPer100g": 27,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鮮奶茶(無糖)（O0701501）；現調飲料(紅茶,牛奶等)；每100g 修正熱量 27 kcal"
+  },
+  {
+    "name": "可樂",
+    "aliases": [],
+    "kcalPer100g": 51,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：可樂（O0600101）；罐裝(碳酸水.咖啡因.糖等)；罐裝含糖；每100g 修正熱量 51 kcal"
+  },
+  {
+    "name": "零卡可樂",
+    "aliases": [
+      "無糖可樂"
+    ],
+    "kcalPer100g": 1,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：可樂(低熱量)（O0600201）；罐裝(碳酸水.咖啡因.焦糖等)；每100g 修正熱量 1 kcal"
+  },
+  {
+    "name": "100%柳橙汁",
+    "aliases": [
+      "純柳橙汁"
+    ],
+    "kcalPer100g": 47,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：柳橙汁(100%)（O0100401）；冷藏產品；每100g 修正熱量 47 kcal"
+  },
+  {
+    "name": "米漿",
+    "aliases": [],
+    "kcalPer100g": 60,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：米漿(散裝)（R1300101）；散裝；每100g 修正熱量 60 kcal"
+  },
+  {
+    "name": "燕麥奶",
+    "aliases": [],
+    "kcalPer100g": 42,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：燕麥奶（R1500101）；冷藏瓶裝(水,燕麥等)；每100g 修正熱量 42 kcal"
+  },
+  {
+    "name": "椰子水",
+    "aliases": [
+      "椰子汁"
+    ],
+    "kcalPer100g": 17,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：可可椰子汁平均值（D41301）；綠皮種；處理:倒出內部汁液分裝；平均值；每100g 修正熱量 17 kcal"
+  },
+  {
+    "name": "香蕉",
+    "aliases": [
+      "北蕉"
+    ],
+    "kcalPer100g": 82,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：北蕉平均值（D08001）；處理:去皮；平均值，去皮；每100g 修正熱量 82 kcal"
+  },
+  {
+    "name": "富士蘋果（去皮）",
+    "aliases": [],
+    "kcalPer100g": 47,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：富士蘋果（D3200404）；混色；處理:去皮及核；每100g 修正熱量 47 kcal"
+  },
+  {
+    "name": "富士蘋果（帶皮）",
+    "aliases": [],
+    "kcalPer100g": 42,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：富士蘋果(帶皮)（D3200501）；混色；處理:帶皮去核；每100g 修正熱量 42 kcal"
+  },
+  {
+    "name": "芭樂",
+    "aliases": [
+      "白肉芭樂",
+      "番石榴"
+    ],
+    "kcalPer100g": 34,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：芭樂平均值(白肉)（D15002）；處理:去蒂及籽；白肉平均值；每100g 修正熱量 34 kcal"
+  },
+  {
+    "name": "木瓜",
+    "aliases": [],
+    "kcalPer100g": 36,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：木瓜平均值（D02001）；處理:去皮及籽；平均值，去皮籽；每100g 修正熱量 36 kcal"
+  },
+  {
+    "name": "西瓜",
+    "aliases": [
+      "紅肉西瓜"
+    ],
+    "kcalPer100g": 32,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：西瓜平均值(紅肉小瓜)（D19002）；紅肉小瓜；處理:去皮及籽；紅肉小瓜平均值，去皮籽；每100g 修正熱量 32 kcal"
+  },
+  {
+    "name": "巨峰葡萄",
+    "aliases": [],
+    "kcalPer100g": 63,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：巨峰葡萄（D1700201）；有籽種,黑皮；處理:去皮及籽；去皮籽；每100g 修正熱量 63 kcal"
+  },
+  {
+    "name": "綠奇異果",
+    "aliases": [
+      "綠肉奇異果"
+    ],
+    "kcalPer100g": 52,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：奇異果（D0500201）；綠肉種；處理:去皮；每100g 修正熱量 52 kcal"
+  },
+  {
+    "name": "柳丁",
+    "aliases": [
+      "柳橙"
+    ],
+    "kcalPer100g": 42,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：甜橙平均值(普遍系)（D36001）；普遍系；處理:去皮及籽；甜橙普遍系平均值；每100g 修正熱量 42 kcal"
+  },
+  {
+    "name": "紅肉火龍果",
+    "aliases": [],
+    "kcalPer100g": 48,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：紅龍果(紅肉)（D0700201）；紅肉種；處理:去皮；每100g 修正熱量 48 kcal"
+  },
+  {
+    "name": "鳳梨",
+    "aliases": [],
+    "kcalPer100g": 51,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鳳梨平均值(雜交種)（D11002）；雜交種；處理:去皮；雜交種平均值；每100g 修正熱量 51 kcal"
+  },
+  {
+    "name": "草莓",
+    "aliases": [],
+    "kcalPer100g": 36,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：草莓（D1400101）；處理:去蒂；每100g 修正熱量 36 kcal"
+  },
+  {
+    "name": "蓮霧",
+    "aliases": [],
+    "kcalPer100g": 38,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：蓮霧平均值(粉紅色種)（D18001）；粉紅色種；處理:去蒂及籽；粉紅色種平均值；每100g 修正熱量 38 kcal"
+  },
+  {
+    "name": "豐水梨",
+    "aliases": [],
+    "kcalPer100g": 35,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豐水梨（D3000206）；處理:去皮及核；每100g 修正熱量 35 kcal"
+  },
+  {
+    "name": "椪柑",
+    "aliases": [],
+    "kcalPer100g": 38,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：椪柑（D3400101）；處理:去皮及籽；每100g 修正熱量 38 kcal"
+  },
+  {
+    "name": "荔枝",
+    "aliases": [],
+    "kcalPer100g": 64,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：荔枝平均值（D22001）；處理:去殼及籽；平均值；每100g 修正熱量 64 kcal"
+  },
+  {
+    "name": "文旦",
+    "aliases": [
+      "文旦柚"
+    ],
+    "kcalPer100g": 46,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：文旦(2023年取樣)（D3500102）；處理:取果肉；取2023年取樣；每100g 修正熱量 46 kcal"
+  },
+  {
+    "name": "甜柿",
+    "aliases": [],
+    "kcalPer100g": 55,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：甜柿平均值（D27002）；處理:去皮及蒂；平均值；每100g 修正熱量 55 kcal"
+  },
+  {
+    "name": "酪梨",
+    "aliases": [],
+    "kcalPer100g": 60,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：酪梨(綠皮)（D0900101）；綠皮；處理:去皮及籽；每100g 修正熱量 60 kcal"
+  },
+  {
+    "name": "愛文芒果",
+    "aliases": [],
+    "kcalPer100g": 41,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：愛文芒果（D2100204）；西洋種；處理:去皮及籽；每100g 修正熱量 41 kcal"
+  },
+  {
+    "name": "小番茄",
+    "aliases": [
+      "聖女番茄"
+    ],
+    "kcalPer100g": 30,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：小番茄平均值(紅色系)（E74004）；生,紅色系小果；處理:去蒂；紅色系小果平均值；每100g 修正熱量 30 kcal"
+  },
+  {
+    "name": "番茄",
+    "aliases": [
+      "大番茄"
+    ],
+    "kcalPer100g": 17,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：大番茄平均值(紅色系)（E74001）；生,紅色系大果；處理:去蒂；紅色系大果平均值；每100g 修正熱量 17 kcal"
+  },
+  {
+    "name": "葡萄乾",
+    "aliases": [],
+    "kcalPer100g": 297,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：葡萄乾（D1710101）；果乾(紅葡萄,無加糖)；每100g 修正熱量 297 kcal"
+  },
+  {
+    "name": "小黃瓜",
+    "aliases": [
+      "花胡瓜"
+    ],
+    "kcalPer100g": 14,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：花胡瓜(有機)（E6400201）；生；處理:去蒂；每100g 修正熱量 14 kcal"
+  },
+  {
+    "name": "綠竹筍（熟）",
+    "aliases": [
+      "熟綠竹筍"
+    ],
+    "kcalPer100g": 22,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：帶殼熟綠竹筍（E1500201）；熟,真空包裝；處理:去殼；真空包裝熟筍；每100g 修正熱量 22 kcal"
+  },
+  {
+    "name": "原味腰果",
+    "aliases": [],
+    "kcalPer100g": 556,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：原味腰果（C0810101）；熟；每100g 修正熱量 556 kcal"
+  },
+  {
+    "name": "杏仁果（熟）",
+    "aliases": [
+      "熟杏仁果"
+    ],
+    "kcalPer100g": 568,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：甘扁桃仁(熟)（C0110201）；熟；每100g 修正熱量 568 kcal"
+  },
+  {
+    "name": "核桃（生）",
+    "aliases": [
+      "生核桃"
+    ],
+    "kcalPer100g": 655,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：生核桃（C0405101）；生；每100g 修正熱量 655 kcal"
+  },
+  {
+    "name": "開心果",
+    "aliases": [],
+    "kcalPer100g": 573,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：開心果（C0710101）；熟；處理:去殼；熟，去殼；每100g 修正熱量 573 kcal"
+  },
+  {
+    "name": "鹽酥花生仁",
+    "aliases": [
+      "鹽酥花生"
+    ],
+    "kcalPer100g": 537,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鹽酥花生仁（R7101501）；處理:含膜,(帶膜花生仁,鹽,糖,五香等)；每100g 修正熱量 537 kcal"
+  },
+  {
+    "name": "葵瓜子仁",
+    "aliases": [
+      "去殼葵瓜子"
+    ],
+    "kcalPer100g": 569,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：原味葵瓜子(去殼)（C2110101）；熟；每100g 修正熱量 569 kcal"
+  },
+  {
+    "name": "雞胸肉（生，去皮）",
+    "aliases": [
+      "去皮雞胸肉（生）"
+    ],
+    "kcalPer100g": 119,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：去皮清肉平均值（I04024）；生,雞胸部位；去皮清肉平均值；每100g 修正熱量 119 kcal"
+  },
+  {
+    "name": "雞柳（生）",
+    "aliases": [
+      "雞里肌（生）"
+    ],
+    "kcalPer100g": 109,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：里肌肉平均值（I04021）；生,雞胸部位；處理:去皮；雞里肌肉平均值；每100g 修正熱量 109 kcal"
+  },
+  {
+    "name": "去骨雞腿肉（生）",
+    "aliases": [],
+    "kcalPer100g": 157,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：清腿平均值（I04042）；生,雞腿部位；處理:去骨；清腿平均值；每100g 修正熱量 157 kcal"
+  },
+  {
+    "name": "豬里肌（生）",
+    "aliases": [
+      "豬大里肌（生）"
+    ],
+    "kcalPer100g": 212,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豬大里肌（I0304101）；生,豬背脊部位；每100g 修正熱量 212 kcal"
+  },
+  {
+    "name": "豬五花（生，去皮）",
+    "aliases": [
+      "去皮五花肉（生）"
+    ],
+    "kcalPer100g": 360,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：豬去皮腹脇肉（I0308101）；生,豬腹脇部位；處理:去皮；每100g 修正熱量 360 kcal"
+  },
+  {
+    "name": "牛肉火鍋片（生）",
+    "aliases": [],
+    "kcalPer100g": 250,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：牛肉火鍋片平均值（I01101）；生,冷凍產品；平均值；每100g 修正熱量 250 kcal"
+  },
+  {
+    "name": "煎鯖魚",
+    "aliases": [
+      "乾煎鯖魚"
+    ],
+    "kcalPer100g": 403,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鯖魚(煎)（J0414809）；處理:去鱗,含皮,去骨刺及內臟,以10g沙拉油煎6分鐘；10g沙拉油煎6分鐘，含皮；每100g 修正熱量 403 kcal"
+  },
+  {
+    "name": "烤鯖魚",
+    "aliases": [],
+    "kcalPer100g": 373,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鯖魚(烤,180度,10分)（J0414806）；處理:去鱗,含皮,去骨刺及內臟,以180℃烤10分鐘；180℃烤10分鐘，含皮；每100g 修正熱量 373 kcal"
+  },
+  {
+    "name": "鮭魚（生，去皮）",
+    "aliases": [],
+    "kcalPer100g": 221,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：大西洋鮭魚平均值(去皮)（J04024）；生；處理:去鱗,去皮,去頭尾,去內臟及骨刺；大西洋鮭魚平均值；每100g 修正熱量 221 kcal"
+  },
+  {
+    "name": "鮭魚生魚片",
+    "aliases": [],
+    "kcalPer100g": 222,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：大西洋鮭魚生魚片（J0402404）；生；每100g 修正熱量 222 kcal"
+  },
+  {
+    "name": "鮪魚生魚片",
+    "aliases": [],
+    "kcalPer100g": 100,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：鮪魚生魚片（J0414601）；生；每100g 修正熱量 100 kcal"
+  },
+  {
+    "name": "清蒸鯛魚片",
+    "aliases": [
+      "清蒸台灣鯛"
+    ],
+    "kcalPer100g": 112,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：台灣鯛魚片(清蒸)（J0412107）；處理:魚片解凍後,以鋁箔紙包裹放入電鍋中,外鍋加水,加熱35分鐘,待冷卻連同湯汁一起均質；電鍋蒸，連湯汁；每100g 修正熱量 112 kcal"
+  },
+  {
+    "name": "煎鯛魚片",
+    "aliases": [
+      "煎台灣鯛"
+    ],
+    "kcalPer100g": 162,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：台灣鯛魚片(油煎)（J0412102）；處理:魚片解凍後,以已熱油不沾鍋(加1大匙葵花油),每片約煎7~8分鐘,兩面煎熟,取出放冷均質；加1大匙油煎；每100g 修正熱量 162 kcal"
+  },
+  {
+    "name": "虱目魚肚（生）",
+    "aliases": [],
+    "kcalPer100g": 342,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：虱目魚腹肉(虱目魚肚)（J0401201）；生,冷凍包裝；處理:去皮及骨刺；冷凍包裝，去皮去刺；每100g 修正熱量 342 kcal"
+  },
+  {
+    "name": "白蝦（生）",
+    "aliases": [
+      "南美白蝦（生）"
+    ],
+    "kcalPer100g": 99,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：白對蝦平均值（J21009）；生；處理:去殼,去頭尾及腸泥；平均值，去殼去頭；每100g 修正熱量 99 kcal"
+  },
+  {
+    "name": "魩仔魚（熟）",
+    "aliases": [
+      "熟魩仔魚"
+    ],
+    "kcalPer100g": 124,
+    "source": "web",
+    "sourceUrl": "https://consumer.fda.gov.tw/Food/TFND.aspx?nodeID=178",
+    "sourceTitle": "衛福部食藥署 食品營養成分資料集（2025版UPDATE1，2026-08 開放資料）",
+    "notes": "TFDA 樣品：魩仔魚平均值(加工)（J04006）；熟,水煮；加工水煮平均值；每100g 修正熱量 124 kcal"
+  }
+]

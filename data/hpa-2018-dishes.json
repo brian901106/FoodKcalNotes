@@ -1,0 +1,233 @@
+[
+  {
+    "name": "原味蛋餅",
+    "aliases": [
+      "蛋餅"
+    ],
+    "kcalPer100g": 223,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 117g = 261 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "鮪魚蛋餅",
+    "aliases": [],
+    "kcalPer100g": 233,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 167g = 389 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "起司蛋餅",
+    "aliases": [
+      "乳酪蛋餅"
+    ],
+    "kcalPer100g": 246,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 140g = 344 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "玉米蛋餅",
+    "aliases": [],
+    "kcalPer100g": 206,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 141g = 291 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "火腿蛋餅",
+    "aliases": [],
+    "kcalPer100g": 209,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 141g = 294 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "鮪魚飯糰",
+    "aliases": [
+      "鮪魚御飯糰",
+      "鮪魚御飯團",
+      "鮪魚飯團",
+      "鲔魚御飯團"
+    ],
+    "kcalPer100g": 213,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 106g = 226 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "紫米飯糰",
+    "aliases": [
+      "紫米飯團"
+    ],
+    "kcalPer100g": 202,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 202g = 408 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "鍋貼",
+    "aliases": [],
+    "kcalPer100g": 304,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份（10個）246g = 747 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "燒餅",
+    "aliases": [],
+    "kcalPer100g": 321,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 80g = 257 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "煎蘿蔔糕",
+    "aliases": [
+      "煎菜頭粿"
+    ],
+    "kcalPer100g": 309,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份（2片）115g = 355 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "饅頭",
+    "aliases": [
+      "白饅頭"
+    ],
+    "kcalPer100g": 249,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 180g = 449 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "小籠包",
+    "aliases": [],
+    "kcalPer100g": 221,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份（6個）169g = 374 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "高麗菜生煎包",
+    "aliases": [
+      "生煎包",
+      "水煎包",
+      "高麗菜水煎包"
+    ],
+    "kcalPer100g": 242,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 106g = 257 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "肉包",
+    "aliases": [
+      "鮮肉包"
+    ],
+    "kcalPer100g": 312,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 153g = 477 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "菜包",
+    "aliases": [
+      "菜包子"
+    ],
+    "kcalPer100g": 218,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 166g = 362 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "豬肉餡餅",
+    "aliases": [
+      "餡餅"
+    ],
+    "kcalPer100g": 323,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 100g = 323 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "高麗菜水餃",
+    "aliases": [
+      "高麗菜豬肉水餃"
+    ],
+    "kcalPer100g": 185,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份（10個）262g = 484 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "肉圓",
+    "aliases": [],
+    "kcalPer100g": 185,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份（大顆 1顆）207g = 382 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "潤餅",
+    "aliases": [
+      "潤餅捲"
+    ],
+    "kcalPer100g": 186,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 221g = 410 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "蔥油餅",
+    "aliases": [],
+    "kcalPer100g": 378,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份（2片）143g = 540 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "蚵仔煎",
+    "aliases": [
+      "蚵煎"
+    ],
+    "kcalPer100g": 168,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 272g = 457 kcal（2018 年資料，份量與配方可能已改變）"
+  },
+  {
+    "name": "皮蛋瘦肉粥",
+    "aliases": [
+      "皮蛋粥"
+    ],
+    "kcalPer100g": 43,
+    "source": "web",
+    "sourceUrl": "https://web.archive.org/web/20241004020240/https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1658&pid=9704",
+    "sourceTitle": "國健署 熱量知多少（2018，已下架）",
+    "notes": "1份 390g = 166 kcal（2018 年資料，份量與配方可能已改變）"
+  }
+]

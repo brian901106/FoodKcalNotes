@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7F6E9"/><stop offset=".6" stop-color="#F0EFDB"/><stop offset="1" stop-color="#EED7C4"/></linearGradient>
+<linearGradient id="a1" gradientUnits="userSpaceOnUse" x1="256" y1="92" x2="256" y2="420"><stop offset="0" stop-color="#7F84C2"/><stop offset="1" stop-color="#999DCC"/></linearGradient>
+<linearGradient id="a2" gradientUnits="userSpaceOnUse" x1="256" y1="420" x2="94.9" y2="286.7"><stop offset="0" stop-color="#999DCC"/><stop offset="1" stop-color="#C6B2D7"/></linearGradient>
+<linearGradient id="plate" x1=".25" y1="0" x2=".75" y2="1"><stop offset="0" stop-color="#3B3659"/><stop offset="1" stop-color="#2E2A44"/></linearGradient>
+</defs>
+<rect width="512" height="512" rx="114" fill="url(#bg)"/>
+<circle cx="256" cy="256" r="164" fill="none" stroke="#FBFAF2" stroke-width="60"/>
+<g fill="none" stroke-width="60" stroke-linecap="round"><path d="M256 92A164 164 0 1 1 250.28 419.9" stroke="url(#a1)"/><path d="M256 420A164 164 0 0 1 94.9 286.7" stroke="url(#a2)"/></g>
+<circle cx="94.9" cy="286.7" r="13.2" fill="#F7F6E9"/>
+<circle cx="256" cy="256" r="110" fill="url(#plate)"/>
+<path d="M256 326V266" stroke="#EED7C4" stroke-width="15" stroke-linecap="round"/>
+<path d="M256 272C256 222 284 198 330 198C330 246 302 272 256 272Z" fill="#C6B2D7"/>
+<path d="M256 254C256 216 232 196 192 196C192 234 216 254 256 254Z" fill="#EED7C4"/>
+</svg>

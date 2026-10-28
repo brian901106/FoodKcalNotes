@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="624" viewBox="0 0 960 624" font-family="system-ui, -apple-system, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+  <title>辨識與熱量流程</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#64748b"/>
+    </marker>
+    <style>
+      text { fill: #1e293b; }
+      .t15 { font-size: 15px; font-weight: 700; }
+      .t14b { font-size: 14px; font-weight: 600; }
+      .t14 { font-size: 14px; }
+      .t13 { font-size: 13px; fill: #64748b; }
+      .ai { fill: #8a4210; }
+      .c { text-anchor: middle; }
+      .b { font-weight: 600; fill: #1e293b; }
+      .panel { fill: #fbfcfe; stroke: #7b8ba3; stroke-width: 1.5; }
+      .group { fill: #eef3fa; stroke: #a9b8cc; stroke-width: 1.5; }
+      .box { fill: #ffffff; stroke: #a9b8cc; stroke-width: 1.5; }
+      .aibox { fill: #fdebd8; stroke: #d9822b; stroke-width: 1.5; }
+      .final { fill: #dbe7f5; stroke: #5b7fae; stroke-width: 1.5; }
+      .actor { fill: #ffffff; stroke: #5b7fae; stroke-width: 1.5; }
+      .note { fill: #fbfcfe; stroke: #a9b8cc; stroke-width: 1.5; stroke-dasharray: 5 4; }
+      .ln { stroke: #64748b; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="960" height="624" fill="#f8fafc"/>
+
+  <!-- 第一列：輸入 → 背景工作 → 辨識 -->
+  <rect class="actor" x="24" y="40" width="160" height="56" rx="28"/>
+  <text class="t15 c" x="104" y="64">照片／文字</text>
+  <text class="t13 c" x="104" y="84">拍照、相簿或打字</text>
+  <line class="ln" x1="184" y1="68" x2="222" y2="68" marker-end="url(#arr)"/>
+
+  <rect class="group" x="224" y="40" width="176" height="56" rx="10"/>
+  <text class="t15 c" x="312" y="64">背景工作</text>
+  <text class="t13 c" x="312" y="84">可關掉 app 等結果</text>
+  <line class="ln" x1="400" y1="68" x2="438" y2="68" marker-end="url(#arr)"/>
+
+  <rect class="aibox" x="440" y="40" width="496" height="56" rx="10"/>
+  <text class="t15 c ai" x="688" y="64">一次模型呼叫：辨識品名與可食重量</text>
+  <text class="t13 c" x="688" y="84">不給熱量；照片中清楚的營養標示同時讀出</text>
+  <line class="ln" x1="464" y1="96" x2="464" y2="134" marker-end="url(#arr)"/>
+
+  <!-- 每個品項的查詢順序 -->
+  <rect class="panel" x="24" y="136" width="464" height="424" rx="12"/>
+  <text class="t15" x="48" y="164">每個品項依序查詢，命中就停止</text>
+
+  <rect class="box" x="48" y="184" width="416" height="64" rx="8"/>
+  <text class="t15" x="68" y="212">① 營養標示</text>
+  <text class="t13" x="68" y="232">同一次呼叫讀出，不再另外呼叫模型</text>
+  <line class="ln" x1="256" y1="248" x2="256" y2="278" marker-end="url(#arr)"/>
+  <text class="t13" x="266" y="268">沒有</text>
+
+  <rect class="box" x="48" y="280" width="416" height="64" rx="8"/>
+  <text class="t15" x="68" y="308">② 本機食物庫</text>
+  <text class="t13" x="68" y="328">名稱或同義名完全相符；互斥詞不合併</text>
+  <line class="ln" x1="256" y1="344" x2="256" y2="374" marker-end="url(#arr)"/>
+  <text class="t13" x="266" y="364">未收錄</text>
+
+  <rect class="aibox" x="48" y="376" width="416" height="64" rx="8"/>
+  <text class="t15 ai" x="68" y="404">③ 網路搜尋</text>
+  <text class="t13" x="68" y="424">須有可核對的引用網址；相近本機項目一併判斷</text>
+  <line class="ln" x1="256" y1="440" x2="256" y2="470" marker-end="url(#arr)"/>
+  <text class="t13" x="266" y="460">找不到</text>
+
+  <rect class="aibox" x="48" y="472" width="416" height="64" rx="8"/>
+  <text class="t15 ai" x="68" y="500">④ LLM 估算</text>
+  <text class="t13" x="68" y="520">標記為「LLM 估算」，在結果頁顯示來源</text>
+
+  <!-- 命中 → 程式計算 -->
+  <line class="ln" x1="464" y1="216" x2="566" y2="216" marker-end="url(#arr)"/>
+  <polyline class="ln" points="464,312 540,312 540,216"/>
+  <polyline class="ln" points="464,408 540,408 540,312"/>
+  <polyline class="ln" points="464,504 540,504 540,408"/>
+  <text class="t13 c" x="514" y="208">命中</text>
+  <text class="t13 c" x="514" y="304">命中</text>
+  <text class="t13 c" x="514" y="400">找到</text>
+  <text class="t13 c" x="514" y="496">估算</text>
+
+  <rect class="final" x="568" y="184" width="368" height="64" rx="10"/>
+  <text class="t15 c" x="752" y="210">程式計算熱量</text>
+  <text class="t14 c" x="752" y="232">重量 × 每100g熱量 ÷ 100</text>
+  <line class="ln" x1="752" y1="248" x2="752" y2="278" marker-end="url(#arr)"/>
+
+  <rect class="actor" x="568" y="280" width="368" height="56" rx="28"/>
+  <text class="t15 c" x="752" y="304">自動存成餐點</text>
+  <text class="t13 c" x="752" y="324">時間為送出當下，之後可修改</text>
+  <line class="ln" x1="752" y1="336" x2="752" y2="400" stroke-dasharray="4 4"/>
+
+  <!-- 快取規則 -->
+  <rect class="note" x="568" y="400" width="368" height="160" rx="10"/>
+  <text class="t14b" x="588" y="430">保存時自動快取進本機食物庫</text>
+  <text class="t13" x="588" y="460"><tspan class="b">會快取</tspan>：網路資料、營養標示（未改過，同名不覆蓋）</text>
+  <text class="t13" x="588" y="484"><tspan class="b">不快取</tspan>：背景自動存檔的 LLM 估算</text>
+  <text class="t13" x="588" y="508"><tspan class="b">不快取</tspan>：你改過名稱或熱量的項目</text>
+  <text class="t13" x="588" y="532">每餐存數值快照，食物庫更新不改舊餐點</text>
+
+  <!-- 圖例 -->
+  <rect class="aibox" x="24" y="584" width="24" height="16" rx="4"/>
+  <text class="t13" x="56" y="597">會呼叫 AI 模型</text>
+  <rect class="box" x="176" y="584" width="24" height="16" rx="4"/>
+  <text class="t13" x="208" y="597">由程式處理</text>
+</svg>

@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="808" viewBox="0 0 960 808" font-family="system-ui, -apple-system, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif">
+  <title>系統架構圖</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrAi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#d9822b"/>
+    </marker>
+    <style>
+      text { fill: #1e293b; }
+      .t18 { font-size: 18px; font-weight: 700; }
+      .t16 { font-size: 16px; font-weight: 700; }
+      .t15 { font-size: 15px; font-weight: 700; }
+      .t14b { font-size: 14px; font-weight: 600; }
+      .t14 { font-size: 14px; }
+      .t13 { font-size: 13px; fill: #64748b; }
+      .ai { fill: #8a4210; }
+      .c { text-anchor: middle; }
+      .outer { fill: #edf1f7; stroke: #9aa8bd; stroke-width: 1.5; }
+      .panel { fill: #fbfcfe; stroke: #7b8ba3; stroke-width: 1.5; }
+      .group { fill: #eef3fa; stroke: #a9b8cc; stroke-width: 1.5; }
+      .box { fill: #ffffff; stroke: #a9b8cc; stroke-width: 1.5; }
+      .aibox { fill: #fdebd8; stroke: #d9822b; stroke-width: 1.5; }
+      .final { fill: #dbe7f5; stroke: #5b7fae; stroke-width: 1.5; }
+      .actor { fill: #ffffff; stroke: #5b7fae; stroke-width: 1.5; }
+      .ext { fill: #f6f1ea; stroke: #b08a62; stroke-width: 1.5; }
+      .cyl { fill: #e6edf6; stroke: #7b8ba3; stroke-width: 1.5; }
+      .cap { fill: #f4f7fb; stroke: #7b8ba3; stroke-width: 1.5; }
+      .ln { stroke: #64748b; stroke-width: 1.5; fill: none; }
+      .lnAi { stroke: #d9822b; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="960" height="808" fill="#f8fafc"/>
+
+  <!-- 左側：連線來源 -->
+  <ellipse class="actor" cx="108" cy="150" rx="84" ry="36"/>
+  <text class="t15 c" x="108" y="146">你的裝置</text>
+  <text class="t13 c" x="108" y="166">手機／平板／其他電腦</text>
+
+  <line class="ln" x1="108" y1="190" x2="108" y2="236" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text class="t13" x="120" y="218">只限 tailnet</text>
+
+  <ellipse class="actor" cx="108" cy="272" rx="84" ry="32"/>
+  <text class="t15 c" x="108" y="268">Tailscale serve</text>
+  <text class="t13 c" x="108" y="288">HTTPS :8443</text>
+  <line class="ln" x1="192" y1="272" x2="238" y2="272" marker-end="url(#arr)"/>
+
+  <ellipse class="actor" cx="108" cy="400" rx="84" ry="32"/>
+  <text class="t15 c" x="108" y="396">本機瀏覽器</text>
+  <text class="t13 c" x="108" y="416">直連 127.0.0.1:3000</text>
+  <line class="ln" x1="192" y1="400" x2="238" y2="400" marker-end="url(#arr)"/>
+
+  <!-- 圖例 -->
+  <rect class="aibox" x="24" y="732" width="24" height="16" rx="4"/>
+  <text class="t13" x="56" y="745">會呼叫 AI 模型</text>
+  <rect class="box" x="24" y="760" width="24" height="16" rx="4"/>
+  <text class="t13" x="56" y="773">由程式處理</text>
+
+  <!-- 你的電腦 -->
+  <rect class="outer" x="216" y="24" width="600" height="760" rx="12"/>
+  <text class="t18" x="240" y="56">你的電腦</text>
+
+  <!-- Express 伺服器 -->
+  <rect class="panel" x="240" y="72" width="552" height="500" rx="10"/>
+  <text class="t16" x="260" y="102">Express 伺服器</text>
+  <text class="t13" x="384" y="102">127.0.0.1:3000（只監聽本機）</text>
+
+  <!-- 請求檢查 -->
+  <rect class="box" x="260" y="116" width="160" height="56" rx="8"/>
+  <text class="t14b c" x="340" y="140">Host 白名單</text>
+  <text class="t13 c" x="340" y="160">只接受本機與 ts.net</text>
+  <rect class="box" x="436" y="116" width="160" height="56" rx="8"/>
+  <text class="t14b c" x="516" y="140">Tailscale 轉送</text>
+  <text class="t13 c" x="516" y="160">一律視為遠端連線</text>
+  <rect class="box" x="612" y="116" width="160" height="56" rx="8"/>
+  <text class="t14b c" x="692" y="140">Session＋CSRF</text>
+  <text class="t13 c" x="692" y="160">寫入須帶 token</text>
+
+  <!-- 辨識流程 -->
+  <rect class="group" x="260" y="192" width="232" height="360" rx="10"/>
+  <text class="t15" x="276" y="220">辨識流程（背景工作）</text>
+  <rect class="aibox" x="276" y="240" width="200" height="36" rx="8"/>
+  <text class="t14 c ai" x="376" y="263">模型辨識品名與重量</text>
+  <line class="ln" x1="376" y1="276" x2="376" y2="290" marker-end="url(#arr)"/>
+  <rect class="box" x="276" y="292" width="200" height="36" rx="8"/>
+  <text class="t14 c" x="376" y="315">營養標示（同次讀出）</text>
+  <line class="ln" x1="376" y1="328" x2="376" y2="342" marker-end="url(#arr)"/>
+  <rect class="box" x="276" y="344" width="200" height="36" rx="8"/>
+  <text class="t14 c" x="376" y="367">本機食物庫比對</text>
+  <line class="ln" x1="376" y1="380" x2="376" y2="394" marker-end="url(#arr)"/>
+  <rect class="aibox" x="276" y="396" width="200" height="36" rx="8"/>
+  <text class="t14 c ai" x="376" y="419">網路搜尋（須有引用）</text>
+  <line class="ln" x1="376" y1="432" x2="376" y2="446" marker-end="url(#arr)"/>
+  <rect class="aibox" x="276" y="448" width="200" height="36" rx="8"/>
+  <text class="t14 c ai" x="376" y="471">LLM 估算</text>
+  <line class="ln" x1="376" y1="484" x2="376" y2="498" marker-end="url(#arr)"/>
+  <rect class="final" x="276" y="500" width="200" height="36" rx="8"/>
+  <text class="t14b c" x="376" y="523">程式計算熱量</text>
+
+  <!-- 辨識流程 → AI 服務鏈 -->
+  <line class="lnAi" x1="492" y1="446" x2="530" y2="446" stroke-dasharray="4 3" marker-end="url(#arrAi)"/>
+
+  <!-- React 介面 -->
+  <rect class="group" x="532" y="192" width="240" height="80" rx="10"/>
+  <text class="t15" x="548" y="222">React 介面（PWA）</text>
+  <text class="t13" x="548" y="248">dist/ 靜態檔，可加入主畫面</text>
+
+  <!-- AI 服務鏈 -->
+  <rect class="group" x="532" y="296" width="240" height="256" rx="10"/>
+  <text class="t15" x="548" y="324">AI 服務鏈</text>
+  <text class="t13" x="548" y="346">依設定順序，失敗自動換下一個</text>
+  <rect class="aibox" x="548" y="364" width="208" height="68" rx="8"/>
+  <text class="t14b c ai" x="652" y="394">ChatGPT（OAuth）</text>
+  <text class="t13 c" x="652" y="414">使用方案額度</text>
+  <line class="ln" x1="652" y1="432" x2="652" y2="458" marker-end="url(#arr)"/>
+  <text class="t13" x="662" y="450">失敗時</text>
+  <rect class="aibox" x="548" y="460" width="208" height="68" rx="8"/>
+  <text class="t14b c ai" x="652" y="490">Claude（API key）</text>
+  <text class="t13 c" x="652" y="510">依 token 用量計費</text>
+
+  <!-- 外部服務 -->
+  <line class="lnAi" x1="756" y1="398" x2="830" y2="398" marker-end="url(#arrAi)"/>
+  <line class="lnAi" x1="756" y1="494" x2="830" y2="494" marker-end="url(#arrAi)"/>
+  <ellipse class="ext" cx="884" cy="398" rx="52" ry="28"/>
+  <text class="t15 c" x="884" y="403">OpenAI</text>
+  <ellipse class="ext" cx="884" cy="494" rx="52" ry="28"/>
+  <text class="t15 c" x="884" y="499">Anthropic</text>
+
+  <!-- 伺服器 ↔ 資料 -->
+  <line class="ln" x1="516" y1="574" x2="516" y2="594" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text class="t13" x="528" y="589">讀寫</text>
+
+  <!-- 資料 -->
+  <rect class="panel" x="240" y="596" width="552" height="168" rx="10"/>
+  <text class="t15" x="256" y="624">資料（~/.my-chatgpt-local）</text>
+  <text class="t13" x="776" y="624" text-anchor="end">加密與 DPAPI 僅限 Windows</text>
+
+  <path class="cyl" d="M256,648 a60,8 0 0 1 120,0 v88 a60,8 0 0 1 -120,0 z"/>
+  <ellipse class="cap" cx="316" cy="648" rx="60" ry="8"/>
+  <text class="t14b c" x="316" y="682">meals.sqlite</text>
+  <text class="t13 c" x="316" y="704">日誌：餐點、照片</text>
+  <text class="t13 c" x="316" y="724">設定、背景工作</text>
+
+  <path class="cyl" d="M388,648 a54,8 0 0 1 108,0 v88 a54,8 0 0 1 -108,0 z"/>
+  <ellipse class="cap" cx="442" cy="648" rx="54" ry="8"/>
+  <text class="t14b c" x="442" y="682">foods 資料表</text>
+  <text class="t13 c" x="442" y="704">本機食物庫</text>
+  <text class="t13 c" x="442" y="724">同一資料庫內</text>
+
+  <path class="cyl" d="M508,648 a76,8 0 0 1 152,0 v88 a76,8 0 0 1 -152,0 z"/>
+  <ellipse class="cap" cx="584" cy="648" rx="76" ry="8"/>
+  <text class="t14b c" x="584" y="682">credentials.json</text>
+  <text class="t13 c" x="584" y="704">AI 登入憑證</text>
+  <text class="t13 c" x="584" y="724">AES-256-GCM 加密</text>
+
+  <path class="cyl" d="M672,648 a52,8 0 0 1 104,0 v88 a52,8 0 0 1 -104,0 z"/>
+  <ellipse class="cap" cx="724" cy="648" rx="52" ry="8"/>
+  <text class="t14b c" x="724" y="682">master.key</text>
+  <text class="t13 c" x="724" y="704">主金鑰</text>
+  <text class="t13 c" x="724" y="724">DPAPI 保護</text>
+</svg>
